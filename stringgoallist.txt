@@ -1,0 +1,5 @@
+* = in progress
+
+rev = reach expected value
+(basic trial and error counting up to the expected value)
+revnofps* = reach expected value asap without using frame by frame visualization

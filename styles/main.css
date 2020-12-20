@@ -1,0 +1,32 @@
+body {
+  background: linear-gradient(#000,#111);
+  color: #fff;
+}
+
+#rl {
+  background-color: #555;
+  border-bottom-right-radius: 2em;
+  margin-right: 1em;
+  opacity: 0.8;
+}
+
+.nav-item {
+  position: relative;
+  width: 2em;
+  height: 2em;
+  border-radius: 1em;
+  opacity: 0.5;
+  transition : 0.5s;
+}
+
+.nav-item:hover {
+  opacity: 1;
+  width: 2.1em;
+  height: 2.1em;
+}
+
+canvas {
+  background-color: #222;
+  border: 1px solid #444;
+  margin-top: 2%;
+}

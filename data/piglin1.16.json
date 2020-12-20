@@ -1,0 +1,28 @@
+{
+  "for": "piglin",
+  "type": "entitty",
+  "items":
+    {
+      "enderpearl": {
+        "amount": {
+          "min": 2,
+          "max": 4
+        },
+        "odds": {
+          "targ": 20,
+          "max": 247
+        },
+        "record": {
+          "tradeSucc": 0,
+          "tradeFail": 0,
+          "attempts": 0
+        }
+      },
+    "placeholder": {
+      "amount": {
+        "min": 2,
+        "max": 4
+      }
+    }
+  }
+}
