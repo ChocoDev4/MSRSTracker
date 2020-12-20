@@ -1,10 +1,11 @@
 import * as Trade from "./modules/trade.js";
 import * as GUI from "./modules/gui.js";
 import * as Graph from "./modules/graph.js";
-import * as Sr from "./modules/speedrunners.js";
+import * as Sr from "./modules/datahandler.js";
 const dataloc = "./data";
 const srloc = "./data/speedrunners"
-const rlnav = document.querySelector("#rl");
+const rlnav = document.querySelector("#rl"),
+btnav = document.querySelector("#btnav")
 // iterates over speedrunner's metadata
 Sr.dataIteration(false, srloc);
 
@@ -21,7 +22,8 @@ function reqDP(fn) {
 }
 
 function init() {
-  GUI.Display.nav(rlnav, srloc);
+  GUI.Display.topnav(rlnav);
+  GUI.Display.bottnav(btnav)
   // temporary -- testing purposes and format
   const Dream = {
     datapack: "",

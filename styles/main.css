@@ -4,7 +4,8 @@ body {
 }
 
 #rl {
-  background-color: #555;
+  background-color: #000;
+  border: 1px solid #444;
   border-bottom-right-radius: 2em;
   margin-right: 1em;
   opacity: 0.8;
@@ -17,6 +18,8 @@ body {
   border-radius: 1em;
   opacity: 0.5;
   transition : 0.5s;
+  margin-left: 5px;
+  margin-top: 5px;
 }
 
 .nav-item:hover {
@@ -26,7 +29,27 @@ body {
 }
 
 canvas {
-  background-color: #222;
+  border-radius: 1em;
   border: 1px solid #444;
   margin-top: 2%;
+}
+
+.bottnav {
+  top: 70%;
+  position: fixed;
+  border: 1px solid darkred;
+  width: 95%;
+  height: 10%;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
+
+.bottnav .nav-item {
+  width: 3em;
+  height: 3em;
+}
+
+.bottnav .nav-item:hover {
+  width: 3.1em;
+  height: 3.1em;
 }

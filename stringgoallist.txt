@@ -1,5 +1,6 @@
 * = in progress
 
+nkp/binomial distribution chart: to be made later, good for different runners comparison (like Illumina)
 rev = reach expected value
 (basic trial and error counting up to the expected value)
 revnofps* = reach expected value asap without using frame by frame visualization

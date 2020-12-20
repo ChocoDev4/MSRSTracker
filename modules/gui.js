@@ -1,5 +1,6 @@
 import {init} from "./graph.js";
-import {datapacks} from "./speedrunners.js";
+import {datapacks} from "./datahandler.js";
+import * as Events from "./events.js";
 const canv = document.createElement("canvas");
 canv.width = 500;
 canv.height = 500;
@@ -22,19 +23,34 @@ class Canvas {
 }
 
 class Display {
-  static nav(dom, dir) {
-    Display.canvas();
+  static topnav(dom, dir) {
     datapacks.forEach(data => {
+     if(data.type !== 'runner') return false;
      const obj = document.createElement("img");
      obj.src = data.imgURL;
      obj.id = "runner-" + data.name;
      obj.className = "nav-item";
+     obj.addEventListener("mouseup", () => {
+      Events.loadToGraph(data)
+      });
      dom.appendChild(obj);
      // add event handler to load
     });
   }
-  static canvas() {
+  static bottnav(dom,dir) {
+    datapacks.forEach(data => {
+      if(data.type !== "item") return false;
+      const obj = document.createElement("img");
+      obj.src = data.imgURL;
+      obj.id = "item-" + data.id;
+      obj.className = "nav-item";
+      obj.addEventListener("mouseup", () => {
+        Events.loadToGraph(data)
+      });
+      dom.appendChild(obj);
+    })
   }
+  //static canvas() { }
 }
 
 setTimeout(() => {

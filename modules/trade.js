@@ -1,3 +1,6 @@
+/*
+TODO: REWRITE OR DELETE THIS ENTIRE MODULE
+*/
 class Entity {
   constructor(dp=null) {
     this.name = "";
@@ -28,16 +31,6 @@ class Entity {
   changeRecVal(arr, itemName) {
     this.items[itemName].record.tradeSucc += arr[0];
     this.items[itemName].record.tradeFail += arr[1];
-  }
-  log(itemName, dom="console") {
-     //later use for GUI, right now its just cringe
-     const record = this.items[itemName].record;
-     const text = `Successes: ${record.tradeSucc} \n Failures: ${record.tradeFail} \n Attempted: ${record.attempts}`;
-     if(dom == "console") {
-       console.log(text);
-       return true;
-     }
-     dom.innerText = text;
   }
 }
 

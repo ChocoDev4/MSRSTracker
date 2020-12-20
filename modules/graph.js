@@ -7,6 +7,7 @@ async function fetcher(loc) {
 }
 
 function wrapText(context, text, x, y, maxWidth, lineHeight) {
+  // borrowed code from StackExchange , too lazy
   var cars = text.split("\n");
 
   for (var ii = 0; ii < cars.length; ii++) {
@@ -57,12 +58,12 @@ class Load {
     /* IMPORTANT!
     extra format: [(k,v),(k,v)...]
     */
-    objs.runner = ru;
-    objs.odds = od;
-    objs.specifics = s;
-    objs.attempts = a;
-    objs.received = re;
-    objs.success = su;
+    if(ru !== null) objs.runner = ru;
+    if(od !== null) objs.odds = od;
+    if(s !== null) objs.specifics = s;
+    if(a !== null) objs.attempts = a;
+    if(re !== null) objs.received = re;
+    if(su !== null) objs.success = su;
     for(let i = 0; i<extra.length;i++) {
       extras.set([i]);
     }

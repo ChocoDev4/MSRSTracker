@@ -1,5 +1,15 @@
-{
-  "enderpearl": {
-    "imgURL": ""
+[
+  {
+  "name": "enderpearl",
+  "imgURL": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/f/f6/Ender_Pearl_JE3_BE2.png",
+  "id": "ep",
+  "type": "item",
+  "odds": [10,226]
+  },
+  {
+  "name":"blazerods",
+  "imgURL": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/8/87/Blaze_Rod_JE1_BE1.png",
+   "id": "br",
+   "type": "item"
   }
-}
+]
