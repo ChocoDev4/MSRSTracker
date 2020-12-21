@@ -4,14 +4,14 @@
   "imgURL": "https://styles.redditmedia.com/t5_2ibu7i/styles/communityIcon_0zjd6qw6x3o41.png",
   "stat": [
     {
-    "enderpearl": {
+    "name":"enderpearl",
      "success": 42,
-     "attempts": 264
+     "attempts": 242
      },
-    "blazerod": {
-      "success": "TBA",
-      "attempts": "TBA"
+     {
+    "name": "blazerod",
+     "success": "TBA",
+     "attempts": "TBA"
     }
-   }
   ]
 }

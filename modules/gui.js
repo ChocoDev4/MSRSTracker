@@ -3,7 +3,7 @@ import {datapacks} from "./datahandler.js";
 import * as Events from "./events.js";
 const canv = document.createElement("canvas");
 canv.width = 500;
-canv.height = 500;
+canv.height = 800;
 document.body.appendChild(canv)
 
 const ctx = canv.getContext("2d");
@@ -58,4 +58,4 @@ setTimeout(() => {
   Canvas.draw();
 },100);
 
-export {Display, Canvas, ctx, stack}
+export {Display, Canvas, canv, ctx, stack}

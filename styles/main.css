@@ -35,13 +35,19 @@ canvas {
 }
 
 .bottnav {
-  top: 70%;
-  position: fixed;
+  top: 50%;
+  right: 95%;
+  position: absolute;
   border: 1px solid darkred;
   width: 95%;
   height: 10%;
-  border-top-left-radius: 1em;
+  background-color: #000;
   border-top-right-radius: 1em;
+  transition: 1.5s;
+}
+
+.bottnav:hover {
+  right: 0%;
 }
 
 .bottnav .nav-item {
@@ -52,4 +58,25 @@ canvas {
 .bottnav .nav-item:hover {
   width: 3.1em;
   height: 3.1em;
+}
+
+.sidenav {
+  position: absolute;
+  display: block;
+  width: 100px;
+  left: 100%;
+  top: 0%;
+  opacity: 0;
+  transition: 1s;
+}
+.sidenav button {
+  background: linear-gradient(#000,#111);
+  border: 1px solid #444;
+  border-radius: 1em;
+  color: #789;
+  text-shadow: 1px 1px #222;
+}
+
+.sidenav button: hover {
+  border: 1px solid darkred;
 }

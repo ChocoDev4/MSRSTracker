@@ -10,6 +10,7 @@
   "name":"blazerods",
   "imgURL": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/8/87/Blaze_Rod_JE1_BE1.png",
    "id": "br",
-   "type": "item"
+   "type": "item",
+   "odds": [0,0]
   }
 ]
